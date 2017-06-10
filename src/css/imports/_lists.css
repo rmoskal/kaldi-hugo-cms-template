@@ -1,1 +1,3 @@
 .list { list-style-type: none; }
+.blist { list-style-type: square; 
+        padding-block-end: 15px;}
