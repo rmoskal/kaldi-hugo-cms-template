@@ -1,0 +1,34 @@
+<div class="bg-off-white pv4">
+  <div class="ph3 mw7 center">
+    <h2 class="f2 b lh-title mb2">{{.heading}}</h2>
+    <p class="mb2 mw8">{{.description}}</p>
+
+    <div class="flex-ns mhn2-ns mb3">
+      <div class="ph2-ns w-50-ns">
+       {{ if .svg1 }}
+        <img src="{{.svg1}}"  width="120px" alt="" class="center db mb3">
+       {{ end }}
+       {{ if .icon1 }}
+        <i class="center fa {{.icon1}} fa-5x db mb3"></i>
+       {{ end }}
+        <p>{{.text1}}</p>
+      </div>
+
+      <div class="ph2-ns w-50-ns">
+       {{ if .svg2 }}
+        <img src="{{.svg2}}" alt="" class="center db mb3" width="100px">
+       {{ end }}
+       {{ if .icon2 }}
+        <i class="center fa {{.icon2}} fa-5x" style="width: 120px"></i>
+       {{ end }}
+        <p>{{.text2}}</p>
+      </div>
+    </div>
+
+    {{ if .buttonText }}
+      <div class="tc">
+        <a href="{{.buttonLink}}" class="btn raise">{{.buttonText}}</a>
+      </div>
+    {{ end }}
+  </div>
+</div>
