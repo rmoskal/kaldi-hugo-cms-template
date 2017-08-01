@@ -5,8 +5,12 @@
   </div>
 
   <div class="ph3-m w-50-m">
-    <h3 class="f3 b lh-title mb1">{{.heading}}</h3>
-    <p>{{.text}}</p>
+    <h3 class="f3 b lh-title mb1 lpad">{{.heading}}</h3>
+    <p class="lpad">{{.text}}</p>
+   {{ if .buttonText }}
+      <div class="tc">
+			<a href="{{.buttonLink}}" class="btn raise">{{.buttonText}}</a>
+      </div>
+    {{ end }}
   </div>
-
 </div>
